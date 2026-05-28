@@ -1,0 +1,33 @@
+[0m14:05:34.301988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2492b3a590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2491999030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2491998fd0>]}
+
+
+============================== 14:05:34.335473 | df9dbafd-df06-4741-94fb-c3c61f1188ed ==============================
+[0m14:05:34.335473 [info ] [MainThread]: Running with dbt=1.11.8
+[0m14:05:34.339952 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'empty': 'None', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'printer_width': '80', 'target_path': 'None', 'warn_error': 'None', 'profiles_dir': '/home/chizoba_eze/.dbt', 'use_experimental_parser': 'False', 'static_parser': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'invocation_command': 'dbt init', 'debug': 'False', 'fail_fast': 'False', 'quiet': 'False', 'log_path': 'logs', 'use_colors': 'True', 'log_format': 'default', 'introspect': 'True'}
+[0m14:05:59.461218 [debug] [MainThread]: Starter project path: /home/chizoba_eze/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m14:05:59.530712 [info ] [MainThread]: 
+Your new dbt project "lone_star_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:05:59.543913 [info ] [MainThread]: Setting up your profile.
+[0m14:06:20.169342 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m14:06:20.171166 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m14:06:20.172212 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m15:08:53.333271 [info ] [MainThread]: Profile lone_star_dbt written to /home/chizoba_eze/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m15:08:53.336173 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 1355.6958, "process_in_blocks": "249128", "process_kernel_time": 4.960183, "process_mem_max_rss": "195892", "process_out_blocks": "96", "process_user_time": 8.815697}
+[0m15:08:53.340138 [debug] [MainThread]: Command `dbt init` succeeded at 15:08:53.339869 after 1355.70 seconds
+[0m15:08:53.341180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2492b3a590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2491999ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f249199a410>]}
+[0m15:08:53.342498 [debug] [MainThread]: Flushing usage events
+[0m15:08:53.914735 [debug] [MainThread]: An error was encountered while trying to flush usage events
