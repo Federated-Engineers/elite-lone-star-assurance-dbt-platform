@@ -28,7 +28,6 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt -r requirements-dev.txt
-          pip install sqlfluff sqlfluff-templater-dbt dbt-snowflake
 
       - name: Run SQLFluff lint
         run: |
