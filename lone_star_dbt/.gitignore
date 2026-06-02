@@ -1,0 +1,6 @@
+
+target/
+dbt_packages/
+logs/
+logs/*
+lone_star_dbt/dbt_packages
