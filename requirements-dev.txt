@@ -1,2 +1,2 @@
-sqlfluff
-sqlfluff-templater-dbt
+sqlfluff==2.3.5
+sqlfluff-templater-dbt==2.3.5
