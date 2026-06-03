@@ -5,7 +5,6 @@ on:
     paths:
       - "**.sql"
       - "lone_star_dbt/**"
-      - "macros/**"
       - "dbt_project.yml"
       - "packages.yml"
       - ".sqlfluff"
@@ -25,10 +24,7 @@ jobs:
           cache: pip
 
       - name: Install dependencies
-        run: |
-          pip install --upgrade pip
-          pip install -r requirements.txt -r requirements-dev.txt
+        run: pip install -r requirements.txt -r requirements-dev.txt
 
       - name: Run SQLFluff lint
-        run: |
-          sqlfluff lint lone_star_dbt/models --dialect snowflake
+        run: sqlfluff lint lone_star_dbt/models --dialect snowflake
