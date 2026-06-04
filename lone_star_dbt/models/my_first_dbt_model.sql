@@ -1,5 +1,5 @@
 SELECT
-    id,
-    name,
-    age
+    id
+    , name
+    , age
 FROM {{ ref('my_first_dbt_model') }}
