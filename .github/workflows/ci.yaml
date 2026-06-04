@@ -33,4 +33,5 @@ jobs:
           pip install -r requirements.txt -r requirements-dev.txt
 
       - name: Run SQLFluff lint
-        run: sqlfluff lint lone_star_dbt/models --dialect snowflake
+        run: sqlfluff lint lone_star_dbt/models/
+        
