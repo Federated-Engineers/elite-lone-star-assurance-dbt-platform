@@ -4,14 +4,12 @@ on:
   pull_request:
     paths:
       - "**/*.sql"
-      - "**/*.yml"
-      - "lone_star_dbt/**"
-      - "dbt_project.yml"
-      - ".sqlfluff"
 
   push:
     branches:
       - main
+    paths:
+      - "**/*.sql"
 
 jobs:
   dbt-ci:
