@@ -2,11 +2,9 @@
 dialect = snowflake
 templater = jinja
 
-[sqlfluff:templater:dbt]
+[sqlfluff:templater:jinja]
 project_dir = ./lone_star_dbt
-profiles_dir = ~/.dbt
-target = dev
-undefined_variables = ignore
+profiles_dir = ./lone_star_dbt
 
 [sqlfluff:rules:capitalisation.keywords]
 capitalisation_policy = upper
