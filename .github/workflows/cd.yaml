@@ -6,8 +6,6 @@ on:
       - main
     paths:
       - "lone_star_dbt/**"
-      - "requirements.txt"
-      - "requirements-dev.txt"
 
 env:
   AWS_REGION: eu-central-1

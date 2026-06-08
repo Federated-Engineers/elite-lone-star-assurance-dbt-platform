@@ -5,12 +5,6 @@ on:
     paths:
       - "**/*.sql"
 
-  push:
-    branches:
-      - main
-    paths:
-      - "**/*.sql"
-
 jobs:
   dbt-ci:
     runs-on: ubuntu-latest
