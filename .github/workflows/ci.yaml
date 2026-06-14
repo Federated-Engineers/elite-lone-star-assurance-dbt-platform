@@ -3,12 +3,7 @@ name: CI pipeline
 on:
   pull_request:
     paths:
-      - "**.sql"
-      - "lone_star_dbt/**"
-      - "macros/**"
-      - "dbt_project.yml"
-      - "packages.yml"
-      - ".sqlfluff"
+      - "**/*.sql"
 
 jobs:
   dbt-ci:
@@ -26,9 +21,9 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install --upgrade pip
-          pip install -r requirements.txt -r requirements-dev.txt
+          python -m pip install --upgrade pip
+          pip install  -r requirements-dev.txt
 
       - name: Run SQLFluff lint
-        run: |
-          sqlfluff lint lone_star_dbt/models --dialect snowflake
+        run: sqlfluff lint lone_star_dbt/models/
+        

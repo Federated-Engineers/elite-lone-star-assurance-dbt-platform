@@ -1,0 +1,2 @@
+SELECT COUNT(age) AS id
+FROM {{ ref('my_first_dbt_model') }}
