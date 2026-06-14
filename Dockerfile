@@ -8,6 +8,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY lone_star_dbt/ ./lone_star_dbt/
 
-WORKDIR /usr/dbt_src/lone_star_dbt
+COPY run_dbt.sh .
 
-CMD ["dbt", "build"]
+RUN chmod +x run_dbt.sh
+
+CMD ["./run_dbt.sh"]

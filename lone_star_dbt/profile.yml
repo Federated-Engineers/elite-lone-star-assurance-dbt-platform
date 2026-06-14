@@ -3,7 +3,7 @@ lone_star_dbt:
   outputs:
     dev:
       type: snowflake
-      threads: 8
+      threads: 4
 
       account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
       user: "{{ env_var('SNOWFLAKE_USER') }}"

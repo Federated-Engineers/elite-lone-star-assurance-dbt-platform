@@ -1,2 +1,1 @@
 sqlfluff==3.0.7
-sqlfluff-templater-dbt==3.0.7
