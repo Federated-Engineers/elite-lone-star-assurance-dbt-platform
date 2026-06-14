@@ -5,4 +5,4 @@ logs/*
 lone_star_dbt/dbt_packages
 dbt_internal_packages/
 lone_star_dbt/.env
-
+.env
