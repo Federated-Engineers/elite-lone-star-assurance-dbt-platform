@@ -39,7 +39,7 @@ jobs:
       - name: Build and Push Docker Image
         env:
           REGISTRY: ${{ secrets.ECR_REGISTRY }}
-          REPOSITORY: elite-lone-star
+          REPOSITORY: elite-lone-star-dbt
           IMAGE_TAG: latest
 
         run: |
